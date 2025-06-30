@@ -2,50 +2,56 @@
 <html>
 <head>
   <title>Dev Browser</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950&q=80');
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      color: white;
+      background-image: url('https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1350&q=80');
       background-size: cover;
       background-position: center;
-      color: white;
-      text-align: center;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding-top: 100px;
     }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 80px 20px;
+      min-height: 100vh;
+    }
+
     h1 {
-      font-size: 36px;
-      text-shadow: 2px 2px 5px #000;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
     }
+
     p {
-      font-size: 18px;
-      text-shadow: 1px 1px 3px #000;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
     }
+
     button {
       background-color: #1e90ff;
       color: white;
-      padding: 15px 30px;
+      padding: 14px 28px;
       font-size: 18px;
-      margin: 15px;
       border: none;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
       cursor: pointer;
-      transition: transform 0.2s ease;
+      transition: background 0.3s ease;
     }
+
     button:hover {
-      background-color: #0b68d1;
-      transform: scale(1.05);
+      background-color: #0077cc;
     }
   </style>
 </head>
 <body>
-  <h1>🚀 Welcome to Dev Browser</h1>
-  <p>Click the button below to visit and subscribe to my channel:</p>
-
-  <button onclick="window.open('https://youtube.com/@devgaming_1997?sub_confirmation=1')">
-    📌 Subscribe to Dev Gaming
-  </button>
+  <div class="container">
+    <h1>🚀 Welcome to Dev Browser</h1>
+    <p>Click the button below:</p>
+    <button onclick="window.open('https://youtube.com/@devgaming_1997?si=nLTapuL5qE_T753_', '_blank')">
+      🎮 Subscribe to Dev Gaming
+    </button>
+  </div>
 </body>
 </html>
